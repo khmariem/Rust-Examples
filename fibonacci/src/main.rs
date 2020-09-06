@@ -5,10 +5,14 @@ fn main() {
     let mut n2:u32 = 0;
 
     for _i in 2..n+1 {
-        n2 = n0 + n1;
+        n2 = sum(n0, n1);
         n0 = n1;
         n1 = n2;
     }
 
     println!("The {}th fibonacci number is {}", n, n2);
+}
+
+fn sum(n1:u32, n2:u32)  -> u32{
+    n1 + n2
 }
