@@ -1,6 +1,6 @@
 fn main() {
     let arr: [u32; 11] = [45,3,56,234,0,1,5543,76,3456,4,13];
-    println!("Hello, world!");
+    println!("Original array {:?}", arr);
     println!("We are going to make some calculations:");
     println!("Max...");
     println!("{}",maxme(arr));
